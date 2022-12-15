@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Izam</title>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<center>
+	<h1>Izam Provide Server</h1>
+	<h2>nothing here. this website is only used to our server business</h2>
+</center>
+ 
+<div class="jam-digital">
+	<div class="kotak">
+		<p id="jam"></p>
+	</div>
+	<div class="kotak">
+		<p id="menit"></p>
+	</div>
+	<div class="kotak">
+		<p id="detik"></p>
+	</div>
+</div>
+<center>
+    <div id="monitor">
+    <p id="mon">Server status <code>-running-</code></p>
+</div>
+</center>
+<script>
+	window.setTimeout("waktu()", 1000);
+ 
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+</body>
+</html>
